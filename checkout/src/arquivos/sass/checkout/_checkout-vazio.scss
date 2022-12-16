@@ -1,38 +1,39 @@
 .empty-cart {
-	font-family: $font-family;
-	&-content {
-		color: $color-black;
-		text-align: center;
+    font-family: $font-family;
+    &-content {
+        color: $color-black;
+        text-align: center;
 
-		@include mq(md, max) {
-			padding: 0 16px;
-		}
-	}
+        @include mq(md, max) {
+            padding: 0 16px;
+        }
+    }
 
-	&-title {
-		font-size: 20px;
-	}
+    &-title {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
 
-	&-links {
-		.link-choose-products {
-			background: $color-black;
-			border: none;
-			border-radius: 5px;
-			transition: ease-in 0.22s all;
-			outline: none;
-			font-family: $font-family;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 16px;
-			text-align: center;
-			letter-spacing: 0.05em;
-			color: $color-white;
-			text-transform: uppercase;
+    &-links {
+        .link-choose-products {
+            background: $color-black;
+            border: none;
+            border-radius: 5px;
+            transition: ease-in 0.22s all;
+            outline: none;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: $color-white;
+            text-transform: uppercase;
 
-			&:hover {
-				background: lighten($color-black, 5);
-			}
-		}
-	}
+            &:hover {
+                background: lighten($color-black, 5);
+            }
+        }
+    }
 }

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 $font-family: "Open Sans", sans-serif;
-$font-family-secundary:"Tenor Sans", sans-serif;
+$font-family-secundary: "Tenor Sans", sans-serif;
 
 /* Colors */
 $color-black: #292929;
@@ -19,20 +19,36 @@ $color-blue: #4267b2;
 
 $color-green: #4caf50;
 
+/* Colors */
+$black: #000;
+$white: #fff;
+
+$gray-50: #e5e5e5;
+$gray-100: #f0f0f0;
+$gray-125: #c4c4c4;
+$gray-150: #989898;
+$gray-200: #8d8d8d;
+$gray-500: #292929;
+
+$blue: #00c8ff;
+
 /* Grid breakpoints */
 $grid-breakpoints: (
-	xs: 0,
-	cstm: 400,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px
+    xs: 0,
+    Gf: 328px,
+    cstm: 400,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    dt: 1025px,
+    xl: 1200px,
+    tv: 2500px,
 ) !default;
 
 $z-index: (
-	level1: 5,
-	level2: 10,
-	level3: 15,
-	level4: 20,
-	level5: 25
+    level1: 5,
+    level2: 10,
+    level3: 15,
+    level4: 20,
+    level5: 25,
 ) !default;
