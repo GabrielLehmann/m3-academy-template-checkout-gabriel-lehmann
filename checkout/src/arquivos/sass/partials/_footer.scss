@@ -1,47 +1,130 @@
 /* _footer.scss */
 .footerCheckout {
-    border-top: none;
-    color: $color-gray2;
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+
+        @include mq(dt, min) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0 15px 0;
+        }
+
+        @include mq(tv, min) {
+            padding: 26px 0 26px 0;
+        }
+    }
 
     &__wrapper {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
+        border-top: 1px solid $black;
+
+        @media screen and (max-width: 490px) {
+            padding: 7px 0;
+        }
     }
 
     &__address {
-        color: $color-gray2;
+        color: $gray-500;
         font-family: $font-family;
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
+        line-height: 14px;
         font-size: 10px;
-        line-height: 12px;
         text-transform: capitalize;
-        max-width: 40%;
 
-        @include mq(md, max) {
-            margin-bottom: 24px;
-            max-width: 100%;
+        @include mq(dt, max) {
+            display: flex;
+            width: 100%;
+            order: 2;
+            margin-top: 17px;
+
+            span {
+                margin-left: 16px;
+            }
+        }
+
+        @include mq(dt, min) {
+            min-width: 269px;
+            margin-left: 32px;
+        }
+
+        @include mq(tv, min) {
+            font-size: 20px;
+            line-height: 27px;
+            min-width: 537px;
+            margin-left: 0;
         }
     }
 
     &__stamps {
-        align-items: center;
         display: flex;
-        justify-self: center;
+        height: 33px;
+        align-items: center;
         list-style: none;
+        margin: 0 0 0 5px;
 
-        @include mq(md, max) {
-            align-self: center;
-            margin-bottom: 12px;
+        li {
+            height: 33px;
         }
 
-        &__divider {
-            background-color: $color-gray4;
-            display: inline-block;
-            height: 24px;
-            margin: 0 8px;
-            width: 1px;
+        @include mq(dt, min) {
+            justify-content: center;
+            min-width: 404px;
+            margin: 0;
+        }
+
+        @include mq(tv, min) {
+            min-width: 690.52px;
+        }
+
+        .payments-icons-wrapper {
+            display: flex;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            gap: 4px;
+
+            figure {
+                padding: 6px 0 7px;
+                width: 35.65px;
+                height: 20px;
+                margin: 0;
+                @include mq(tv, min) {
+                    width: 69.63px;
+                }
+
+                @include mq(Gf, max) {
+                    width: 28px;
+                }
+            }
+        }
+
+        .footerCheckout__stamps__divider {
+            border-left: 1px solid $gray-125;
+            margin: 0 10px;
+            height: 33px;
+            padding: 0 0 9px;
+
+            @include mq(dt, min) {
+                margin-left: 11.35px;
+            }
+        }
+
+        .footerCheckout__vtexpci {
+            .vtex-icon {
+                width: 53px;
+                margin: 0;
+            }
+
+            @include mq(tv, min) {
+                .vtex-icon {
+                    width: 103.52px;
+                    height: 64.46px;
+                }
+            }
         }
     }
 
@@ -51,18 +134,43 @@
         list-style-type: none;
         margin: 0;
 
-        li:last-child {
+        @include mq(dt, max) {
+            display: flex;
+            width: 100%;
+            order: 3;
+            margin-top: 17px;
+        }
+
+        @include mq(dt, min) {
+            min-width: 217px;
+            margin-right: 22.5px;
+        }
+
+        li {
             margin-left: 16px;
+
+            figure {
+                margin: 0;
+            }
+        }
+
+        .vtex-icon {
+            width: 44.92px;
+            margin: 0;
+        }
+        .m3-icon {
+            width: 28.66px;
+            margin: 0;
         }
 
         a {
             align-items: center;
-            color: $color-gray2;
+            color: $gray-500;
             display: flex;
             font-family: $font-family;
             font-style: normal;
-            font-weight: normal;
-            font-size: 10px;
+            font-weight: 400;
+            font-size: 9px;
             line-height: 12px;
             text-decoration: none;
 
@@ -70,5 +178,38 @@
                 margin-right: 8px;
             }
         }
+
+        @include mq(tv, min) {
+            min-width: 388.98px;
+            margin-right: 0;
+
+            a {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            li {
+                margin-left: 10px;
+            }
+
+            .vtex-icon {
+                width: 87.73px;
+            }
+            .m3-icon {
+                width: 55.98px;
+            }
+        }
+    }
+
+    .footerCheckout::after,
+    ::before {
+        display: none;
+        content: none;
+    }
+
+    .footerCheckout::before,
+    ::after {
+        display: none;
+        content: none;
     }
 }

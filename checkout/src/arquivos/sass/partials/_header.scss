@@ -1,6 +1,10 @@
 /* _header.scss */
 .headerCheckout {
+    width: 100%;
+    border-bottom: 1px solid black;
+
     .container {
+        padding: 29px 131px;
         width: auto !important;
     }
     &__wrapper {
@@ -17,16 +21,21 @@
     }
 
     &__safeBuy {
+        img {
+            height: 15px;
+            margin-right: 8px;
+        }
+
         span {
             align-items: center;
-            display: flex;
+            // display: flex;
             text-transform: uppercase;
             font-family: $font-family;
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
             line-height: 14px;
-            color: $color-gray;
+            color: $color-black;
         }
 
         i {
