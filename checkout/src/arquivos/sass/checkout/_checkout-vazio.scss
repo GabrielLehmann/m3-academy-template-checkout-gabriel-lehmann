@@ -1,4 +1,8 @@
 .empty-cart {
+    p {
+        display: none;
+    }
+
     font-family: $font-family;
     &-content {
         color: $color-black;
@@ -16,22 +20,35 @@
 
     &-links {
         .link-choose-products {
-            background: $color-black;
-            border: none;
-            border-radius: 5px;
-            transition: ease-in 0.22s all;
-            outline: none;
-            font-family: $font-family;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            text-align: center;
-            letter-spacing: 0.05em;
-            color: $color-white;
+            // background: red;
+            // border: none;
+            // border-radius: 5px;
+            // transition: ease-in 0.22s all;
+            // outline: none;
+            // font-family: $font-family;
+            // font-style: normal;
+            // font-weight: 500;
+            // font-size: 14px;
+            // line-height: 16px;
+            // text-align: center;
+            // letter-spacing: 0.05em;
+            // color: $color-white;
             text-transform: uppercase;
+            color: transparent;
+            display: flex;
+            flex-direction: column;
+            font-family: "Tenor Sans";
+
+            &::after {
+                content: "Continuar comprando";
+                color: $white;
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
 
             &:hover {
+                color: transparent;
                 background: lighten($color-black, 5);
             }
         }
