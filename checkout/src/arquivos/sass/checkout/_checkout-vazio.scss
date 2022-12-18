@@ -1,3 +1,6 @@
+.btn {
+    border-radius: 0%;
+}
 .empty-cart {
     p {
         display: none;
@@ -20,19 +23,20 @@
 
     &-links {
         .link-choose-products {
-            // background: red;
-            // border: none;
-            // border-radius: 5px;
-            // transition: ease-in 0.22s all;
-            // outline: none;
-            // font-family: $font-family;
-            // font-style: normal;
-            // font-weight: 500;
-            // font-size: 14px;
-            // line-height: 16px;
-            // text-align: center;
-            // letter-spacing: 0.05em;
-            // color: $color-white;
+            border: 1px solid black;
+            transition: ease-in 0.22s all;
+            outline: none;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: $color-white;
+            background: $color-white;
+            width: 327px;
+            margin-left: 575px;
             text-transform: uppercase;
             color: transparent;
             display: flex;
@@ -41,7 +45,7 @@
 
             &::after {
                 content: "Continuar comprando";
-                color: $white;
+                color: $color-black;
                 position: absolute;
                 left: 0;
                 right: 0;
